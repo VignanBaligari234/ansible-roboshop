@@ -47,7 +47,6 @@
     ansible.builtin.command: pip3.6 install -r requirements.txt
     args:
       chdir: /app
-    ignore_errors: true
 
   - name: copy payment service to systemd 
     ansible.builtin.copy:
