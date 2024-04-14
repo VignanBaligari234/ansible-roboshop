@@ -71,8 +71,8 @@
       name: mongodb-org-shell
       state: installed
 
-  - name: load schema into mongodb
-    ansible.builtin.command: mongo --host mongodb.vignanspace.online </app/schema/catalogue.js
+  - name: load catalogue data into mongodb
+    ansible.builtin.command: mongo --host mongodb.vignanspace.online < /app/schema/catalogue.js
 
   - name: restart catalogue
     ansible.builtin.service:
