@@ -43,13 +43,8 @@
       dest: /app
       remote_src: yes
 
-  # - name: install python dependencies 
-  #   ansible.builtin.command: pip3.6 install -r requirements.txt
-  #   args:
-  #     chdir: /app 
-
   - name: Install Python dependencies
-    ansibel.builtin.shell: pip3.6 install -r requirements.txt
+    ansibel.builtin.command: pip3.6 install -r requirements.txt
     args:
       chdir: /app
 
