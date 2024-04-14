@@ -43,10 +43,21 @@
       dest: /app
       remote_src: yes
 
-  - name: install python dependencies 
-    ansible.builtin.command: pip3.6 install -r requirements.txt
+  # - name: install python dependencies 
+  #   ansible.builtin.command: pip3.6 install -r requirements.txt
+  #   args:
+  #     chdir: /app 
+
+  - name: Install Python dependencies
+    command: pip3.6 install -r requirements.txt
     args:
-      chdir: /app 
+      chdir: /app
+    register: pip_result
+
+  - name: Fail task if pip installation fails
+    fail:
+      msg: "pip installation failed with return code {{ pip_result.rc }}"
+    when: pip_result.rc != 0
 
   - name: copy payment service to systemd 
     ansible.builtin.copy:
