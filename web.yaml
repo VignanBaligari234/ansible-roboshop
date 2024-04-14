@@ -13,15 +13,15 @@
       state: started
       enabled: yes 
 
-  - name: remove direcotory
+  - name: remove directory
     ansible.builtin.file:
       path: /usr/share/nginx/html
       state: absent
 
-  - name: creating direcotory
+  - name: creating directory
     ansible.builtin.file:
       path: /usr/share/nginx/html
-      state: direcotory
+      state: directory
 
   - name: download web artifact
     ansible.builtin.get_url:
