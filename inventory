@@ -23,7 +23,7 @@ mysql.vignanspace.online
 shipping.vignanspace.online
 
 [rabbitmq]
-shipping.vignanspace.online
+rabbitmq.vignanspace.online
 
 [payment]
 payment.vignanspace.online
