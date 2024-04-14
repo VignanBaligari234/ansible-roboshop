@@ -6,3 +6,6 @@ catalogue.vignanspace.online
 
 [web]
 web.vignanspace.online
+
+[redis]
+redis.vignanspace.online
