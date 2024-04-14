@@ -9,3 +9,6 @@ web.vignanspace.online
 
 [redis]
 redis.vignanspace.online
+
+[user]
+user.vignanspace.online
