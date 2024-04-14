@@ -61,18 +61,6 @@
     ansible.builtin.systemd:
       daemon_reload: true
   
-  - name: copy mongodb repo to yum.repos.d 
-    ansible.builtin.copy:
-      src: mongodb.repo 
-      dest: /etc/yum.repos.d/mongo.repo
-
-  - name: install mongodb-org-shell
-    ansible.builtin.yum:
-      name: mongodb-org-shell
-      state: installed
-
-  - name: load cart data into mongodb
-    ansible.builtin.command: mongo --host mongodb.vignanspace.online < /app/schema/cart.js
 
   - name: restart cart
     ansible.builtin.service:
