@@ -56,6 +56,30 @@
     ansible.builtin.copy:
       src: catalogue.service
       dest: /etc/systemd/system/catalogue.service
+
+  - name: daemon reload 
+    ansible.builtin.systemd:
+      daemon_reload: true
+  
+  - name: copy mongodb repo to yum.repos.d 
+    ansible.builtin.copy:
+      src: mongodb.repo 
+      dest: /etc/yum.repos.d/mongo.repo
+
+  - name: install mongodb-org-shell
+    ansible.builtin.yum:
+      name: mongodb-org-shell
+      state: installed
+
+  - name: load schema into mongodb
+    ansible.builtin.command: mongo --host mongodb.vignanspace.online </app/schema/catalogue.js
+
+  - name: restart catalogue
+    ansible.builtin.service:
+      name: catalogue
+      state: restarted
+      enabled: true
+
   
 
      
