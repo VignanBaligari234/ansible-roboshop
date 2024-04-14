@@ -21,3 +21,6 @@ mysql.vignanspace.online
 
 [shipping]
 shipping.vignanspace.online
+
+[rabbitmq]
+shipping.vignanspace.online
