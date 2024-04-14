@@ -12,3 +12,6 @@ redis.vignanspace.online
 
 [user]
 user.vignanspace.online
+
+[cart]
+cart.vignanspace.online
