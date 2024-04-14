@@ -24,3 +24,6 @@ shipping.vignanspace.online
 
 [rabbitmq]
 shipping.vignanspace.online
+
+[payment]
+payment.vignanspace.online
