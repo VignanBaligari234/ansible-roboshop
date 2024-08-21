@@ -72,7 +72,7 @@
       state: installed
 
   - name: load user data into mongodb
-    ansible.builtin.command: mongo --host mongodb.vignanspace.online < /app/schema/user.js
+    ansible.builtin.command: mongo --host mongodb.vignanlabs.online < /app/schema/user.js
 
   - name: restart user
     ansible.builtin.service:

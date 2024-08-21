@@ -70,7 +70,7 @@
       state: installed
 
   - name: load shipping data into mysql
-    ansible.builtin.shell: mysql -h mysql.vignanspace.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+    ansible.builtin.shell: mysql -h mysql.vignanlabs.online -uroot -pRoboShop@1 < /app/schema/shipping.sql 
 
   - name: restart shipping
     ansible.builtin.service:
