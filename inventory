@@ -1,29 +1,29 @@
 [mongodb]
-mongodb.vignanspace.online
+mongodb.vignanlabs.online
 
 [catalogue]
-catalogue.vignanspace.online
+catalogue.vignanlabs.online
 
 [web]
-web.vignanspace.online
+web.vignanlabs.online
 
 [redis]
-redis.vignanspace.online
+redis.vignanlabs.online
 
 [user]
-user.vignanspace.online
+user.vignanlabs.online
 
 [cart]
-cart.vignanspace.online
+cart.vignanlabs.online
 
 [mysql]
-mysql.vignanspace.online
+mysql.vignanlabs.online
 
 [shipping]
-shipping.vignanspace.online
+shipping.vignanlabs.online
 
 [rabbitmq]
-rabbitmq.vignanspace.online
+rabbitmq.vignanlabs.online
 
 [payment]
-payment.vignanspace.online
+payment.vignanlabs.online
